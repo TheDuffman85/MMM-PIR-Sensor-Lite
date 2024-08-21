@@ -81,7 +81,7 @@ The following properties can be configured:
 | ---------------------------- | -----------
 | `sensorPin`                  | The [GPIO pin](https://pinout.xyz/) of the sensor. <br><br> This value is **REQUIRED**
 | `commandType`                | The command used to manage monitor. <br><br> **Possible values:** `'vcgencmd'`, `'xrandr'`, `'xset'` or `'wayland'` <br> **Default value:** `'wayland'`
-| `hdmiPort`                   | The HDMI port (required for `xrandr`) <br><br> **Possible values:** `HDMI-A-1` or `HDMI-A-2` <br> **Default value:** `HDMI-1`
+| `hdmiPort`                   | The HDMI port (required for `xrandr`) <br><br> **Possible values:** `HDMI-A-1` or `HDMI-A-2` <br> **Default value:** `HDMI-A-1`
 | `title`                      | The title. It's hidden if `title: ""` <br><br> **Default value:** `"Automatic Standby"`
 | `rotation`                   | Direction of content rotation. <br><br> **Possible values:** `'0'`, `'90'`, `'180'` or `'270'` <br> **Default value:** `'0'`
 | `deactivateDelay`            | How often does the content needs to be fetched? (Milliseconds) <br><br> **Possible values:** `1000` - `86400000` <br> **Default value:** `15 * 60 * 1000` (15 minutes)
