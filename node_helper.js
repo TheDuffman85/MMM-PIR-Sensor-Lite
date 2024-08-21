@@ -59,6 +59,10 @@ module.exports = NodeHelper.create({
 				case 'xset':
 					exec("xset dpms force on", null);
 					break;
+					
+				case 'wayland':
+					exec("WAYLAND_DISPLAY=\"wayland-1\" wlr-randr --output " + this.config.hdmiPort + " --on --transform  " + this.config.rotation, null);
+					break;
 			}
 		}
 	},
@@ -79,6 +83,10 @@ module.exports = NodeHelper.create({
 
 				case 'xset':
 					exec("xset dpms force off", null);
+					break;
+					
+				case 'wayland':
+					exec("WAYLAND_DISPLAY=\"wayland-1\" wlr-randr --output " + this.config.hdmiPort + " --off --transform  " + this.config.rotation, null);
 					break;
 			}
 		}

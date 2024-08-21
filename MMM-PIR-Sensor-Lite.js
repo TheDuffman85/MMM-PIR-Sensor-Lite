@@ -13,10 +13,10 @@ Module.register("MMM-PIR-Sensor-Lite", {
 	// Default module config
 	defaults: {
 		sensorPin: 0, // GPIO pin
-		commandType: 'xrandr', // Type of command used
-		hdmiPort: 'HDMI-1', // HDMI port for xrandr
+		commandType: 'wayland', // Type of command used
+		hdmiPort: 'HDMI-A-1', // HDMI port for xrandr
 		title: "Automatic Standby",
-		rotation: 'normal',
+		rotation: '0',
 		deactivateDelay: 15 * 60 * 1000, // 15 minutes
 		updateInterval: 1000, // 1 second
 		animationSpeed: 1000, // 1 second
@@ -54,8 +54,8 @@ Module.register("MMM-PIR-Sensor-Lite", {
 			return wrapper;
 		}
 
-		if(!['vcgencmd', 'xrandr', 'xset'].includes(this.config.commandType)) {
-			wrapper.innerHTML = "Please set <i>a command supported (vcgencmd, xrandr or xset)</i> in the config for module: " + this.name + ".";
+		if(!['vcgencmd', 'xrandr', 'xset', 'wayland'].includes(this.config.commandType)) {
+			wrapper.innerHTML = "Please set <i>a command supported (vcgencmd, xrandr, xset or wayland)</i> in the config for module: " + this.name + ".";
 			wrapper.className = "dimmed light small";
 			return wrapper;
 		}
