@@ -80,10 +80,10 @@ The following properties can be configured:
 | Option                       | Description
 | ---------------------------- | -----------
 | `sensorPin`                  | The [GPIO pin](https://pinout.xyz/) of the sensor. <br><br> This value is **REQUIRED**
-| `commandType`                | The command used to manage monitor. <br><br> **Possible values:** `'vcgencmd'`, `'xrandr'` or `'xset'` <br> **Default value:** `'xrandr'`
-| `hdmiPort`                   | The HDMI port (required for `xrandr`) <br><br> **Possible values:** `HDMI-1` or `HDMI-2` <br> **Default value:** `HDMI-1`
+| `commandType`                | The command used to manage monitor. <br><br> **Possible values:** `'vcgencmd'`, `'xrandr'`, `'xset'` or `'wayland'` <br> **Default value:** `'wayland'`
+| `hdmiPort`                   | The HDMI port (required for `xrandr`) <br><br> **Possible values:** `HDMI-A-1` or `HDMI-A-2` <br> **Default value:** `HDMI-1`
 | `title`                      | The title. It's hidden if `title: ""` <br><br> **Default value:** `"Automatic Standby"`
-| `rotation`                   | Direction of content rotation. <br><br> **Possible values:** `'normal'`, `'left'`, `'right'` or `'inverted'` <br> **Default value:** `'normal'`
+| `rotation`                   | Direction of content rotation. <br><br> **Possible values:** `'0'`, `'90'`, `'180'` or `'270'` <br> **Default value:** `'0'`
 | `deactivateDelay`            | How often does the content needs to be fetched? (Milliseconds) <br><br> **Possible values:** `1000` - `86400000` <br> **Default value:** `15 * 60 * 1000` (15 minutes)
 | `updateInterval`             | How often does the countdown needs to be updated? (Milliseconds) <br><br> **Possible values:**`0` - `5000` <br> **Default value:** `1000` (1 second)
 | `animationSpeed`             | Speed of the update animation. (Milliseconds) <br><br> **Possible values:**`0` - `5000` <br> **Default value:** `1000` (1 second)
