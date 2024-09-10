@@ -23,7 +23,7 @@ cd ~/MagicMirror/modules
 
 Clone this repository:
 ```shell
-git clone https://github.com/grenagit/MMM-PIR-Sensor-Lite
+git clone https://github.com/TheDuffman85/MMM-PIR-Sensor-Lite
 ```
 
 Go to your MMM-PIR-Sensor-Lite's Module folder:
