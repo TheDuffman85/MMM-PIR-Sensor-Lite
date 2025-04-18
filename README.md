@@ -1,5 +1,3 @@
-🛑 **MMM-PIR-Sensor-Lite** is **no longer developed**, the **GitHub repository** has been archived since **January 2024**. We advise you to use [MMM-Pir](https://github.com/bugsounet/MMM-Pir) which is **actively maintained** by *bugsounet*!
-
 # Module: MMM-PIR-Sensor-Lite
 This module manage monitor with PIR motion sensor (automatic standby when presence isn't detected).
 
@@ -23,7 +21,7 @@ cd ~/MagicMirror/modules
 
 Clone this repository:
 ```shell
-git clone https://github.com/grenagit/MMM-PIR-Sensor-Lite
+git clone https://github.com/TheDuffman85/MMM-PIR-Sensor-Lite
 ```
 
 Go to your MMM-PIR-Sensor-Lite's Module folder:
